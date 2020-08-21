@@ -1,0 +1,252 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-celender-orange-name: 'icon-celender-orange';
+@icon-celender-orange-x: 0px;
+@icon-celender-orange-y: 51px;
+@icon-celender-orange-offset-x: 0px;
+@icon-celender-orange-offset-y: -51px;
+@icon-celender-orange-width: 17px;
+@icon-celender-orange-height: 19px;
+@icon-celender-orange-total-width: 129px;
+@icon-celender-orange-total-height: 96px;
+@icon-celender-orange-image: '../assets/icons/sprite.png';
+@icon-celender-orange: 0px 51px 0px -51px 17px 19px 129px 96px '../assets/icons/sprite.png' 'icon-celender-orange';
+@icon-celender-name: 'icon-celender';
+@icon-celender-x: 0px;
+@icon-celender-y: 0px;
+@icon-celender-offset-x: 0px;
+@icon-celender-offset-y: 0px;
+@icon-celender-width: 43px;
+@icon-celender-height: 41px;
+@icon-celender-total-width: 129px;
+@icon-celender-total-height: 96px;
+@icon-celender-image: '../assets/icons/sprite.png';
+@icon-celender: 0px 0px 0px 0px 43px 41px 129px 96px '../assets/icons/sprite.png' 'icon-celender';
+@icon-facebook-black-name: 'icon-facebook-black';
+@icon-facebook-black-x: 51px;
+@icon-facebook-black-y: 51px;
+@icon-facebook-black-offset-x: -51px;
+@icon-facebook-black-offset-y: -51px;
+@icon-facebook-black-width: 16px;
+@icon-facebook-black-height: 16px;
+@icon-facebook-black-total-width: 129px;
+@icon-facebook-black-total-height: 96px;
+@icon-facebook-black-image: '../assets/icons/sprite.png';
+@icon-facebook-black: 51px 51px -51px -51px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-facebook-black';
+@icon-facebook-name: 'icon-facebook';
+@icon-facebook-x: 87px;
+@icon-facebook-y: 0px;
+@icon-facebook-offset-x: -87px;
+@icon-facebook-offset-y: 0px;
+@icon-facebook-width: 16px;
+@icon-facebook-height: 16px;
+@icon-facebook-total-width: 129px;
+@icon-facebook-total-height: 96px;
+@icon-facebook-image: '../assets/icons/sprite.png';
+@icon-facebook: 87px 0px -87px 0px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-facebook';
+@icon-google-plus-black-name: 'icon-google-plus-black';
+@icon-google-plus-black-x: 87px;
+@icon-google-plus-black-y: 26px;
+@icon-google-plus-black-offset-x: -87px;
+@icon-google-plus-black-offset-y: -26px;
+@icon-google-plus-black-width: 16px;
+@icon-google-plus-black-height: 16px;
+@icon-google-plus-black-total-width: 129px;
+@icon-google-plus-black-total-height: 96px;
+@icon-google-plus-black-image: '../assets/icons/sprite.png';
+@icon-google-plus-black: 87px 26px -87px -26px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-google-plus-black';
+@icon-google-plus-name: 'icon-google-plus';
+@icon-google-plus-x: 87px;
+@icon-google-plus-y: 52px;
+@icon-google-plus-offset-x: -87px;
+@icon-google-plus-offset-y: -52px;
+@icon-google-plus-width: 16px;
+@icon-google-plus-height: 16px;
+@icon-google-plus-total-width: 129px;
+@icon-google-plus-total-height: 96px;
+@icon-google-plus-image: '../assets/icons/sprite.png';
+@icon-google-plus: 87px 52px -87px -52px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-google-plus';
+@icon-instagram-black-name: 'icon-instagram-black';
+@icon-instagram-black-x: 0px;
+@icon-instagram-black-y: 80px;
+@icon-instagram-black-offset-x: 0px;
+@icon-instagram-black-offset-y: -80px;
+@icon-instagram-black-width: 16px;
+@icon-instagram-black-height: 16px;
+@icon-instagram-black-total-width: 129px;
+@icon-instagram-black-total-height: 96px;
+@icon-instagram-black-image: '../assets/icons/sprite.png';
+@icon-instagram-black: 0px 80px 0px -80px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-instagram-black';
+@icon-instagram-name: 'icon-instagram';
+@icon-instagram-x: 26px;
+@icon-instagram-y: 80px;
+@icon-instagram-offset-x: -26px;
+@icon-instagram-offset-y: -80px;
+@icon-instagram-width: 16px;
+@icon-instagram-height: 16px;
+@icon-instagram-total-width: 129px;
+@icon-instagram-total-height: 96px;
+@icon-instagram-image: '../assets/icons/sprite.png';
+@icon-instagram: 26px 80px -26px -80px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-instagram';
+@icon-manplus-name: 'icon-manplus';
+@icon-manplus-x: 53px;
+@icon-manplus-y: 0px;
+@icon-manplus-offset-x: -53px;
+@icon-manplus-offset-y: 0px;
+@icon-manplus-width: 24px;
+@icon-manplus-height: 19px;
+@icon-manplus-total-width: 129px;
+@icon-manplus-total-height: 96px;
+@icon-manplus-image: '../assets/icons/sprite.png';
+@icon-manplus: 53px 0px -53px 0px 24px 19px 129px 96px '../assets/icons/sprite.png' 'icon-manplus';
+@icon-mark-map-name: 'icon-mark-map';
+@icon-mark-map-x: 113px;
+@icon-mark-map-y: 52px;
+@icon-mark-map-offset-x: -113px;
+@icon-mark-map-offset-y: -52px;
+@icon-mark-map-width: 12px;
+@icon-mark-map-height: 16px;
+@icon-mark-map-total-width: 129px;
+@icon-mark-map-total-height: 96px;
+@icon-mark-map-image: '../assets/icons/sprite.png';
+@icon-mark-map: 113px 52px -113px -52px 12px 16px 129px 96px '../assets/icons/sprite.png' 'icon-mark-map';
+@icon-microfon-name: 'icon-microfon';
+@icon-microfon-x: 27px;
+@icon-microfon-y: 51px;
+@icon-microfon-offset-x: -27px;
+@icon-microfon-offset-y: -51px;
+@icon-microfon-width: 14px;
+@icon-microfon-height: 19px;
+@icon-microfon-total-width: 129px;
+@icon-microfon-total-height: 96px;
+@icon-microfon-image: '../assets/icons/sprite.png';
+@icon-microfon: 27px 51px -27px -51px 14px 19px 129px 96px '../assets/icons/sprite.png' 'icon-microfon';
+@icon-twitter-black-name: 'icon-twitter-black';
+@icon-twitter-black-x: 52px;
+@icon-twitter-black-y: 80px;
+@icon-twitter-black-offset-x: -52px;
+@icon-twitter-black-offset-y: -80px;
+@icon-twitter-black-width: 16px;
+@icon-twitter-black-height: 16px;
+@icon-twitter-black-total-width: 129px;
+@icon-twitter-black-total-height: 96px;
+@icon-twitter-black-image: '../assets/icons/sprite.png';
+@icon-twitter-black: 52px 80px -52px -80px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-twitter-black';
+@icon-twitter-name: 'icon-twitter';
+@icon-twitter-x: 78px;
+@icon-twitter-y: 80px;
+@icon-twitter-offset-x: -78px;
+@icon-twitter-offset-y: -80px;
+@icon-twitter-width: 16px;
+@icon-twitter-height: 16px;
+@icon-twitter-total-width: 129px;
+@icon-twitter-total-height: 96px;
+@icon-twitter-image: '../assets/icons/sprite.png';
+@icon-twitter: 78px 80px -78px -80px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-twitter';
+@icon-vimeo-black-name: 'icon-vimeo-black';
+@icon-vimeo-black-x: 113px;
+@icon-vimeo-black-y: 0px;
+@icon-vimeo-black-offset-x: -113px;
+@icon-vimeo-black-offset-y: 0px;
+@icon-vimeo-black-width: 16px;
+@icon-vimeo-black-height: 16px;
+@icon-vimeo-black-total-width: 129px;
+@icon-vimeo-black-total-height: 96px;
+@icon-vimeo-black-image: '../assets/icons/sprite.png';
+@icon-vimeo-black: 113px 0px -113px 0px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-vimeo-black';
+@icon-vimeo-name: 'icon-vimeo';
+@icon-vimeo-x: 113px;
+@icon-vimeo-y: 26px;
+@icon-vimeo-offset-x: -113px;
+@icon-vimeo-offset-y: -26px;
+@icon-vimeo-width: 16px;
+@icon-vimeo-height: 16px;
+@icon-vimeo-total-width: 129px;
+@icon-vimeo-total-height: 96px;
+@icon-vimeo-image: '../assets/icons/sprite.png';
+@icon-vimeo: 113px 26px -113px -26px 16px 16px 129px 96px '../assets/icons/sprite.png' 'icon-vimeo';
+@spritesheet-width: 129px;
+@spritesheet-height: 96px;
+@spritesheet-image: '../assets/icons/sprite.png';
+@spritesheet-sprites: @icon-celender-orange @icon-celender @icon-facebook-black @icon-facebook @icon-google-plus-black @icon-google-plus @icon-instagram-black @icon-instagram @icon-manplus @icon-mark-map @icon-microfon @icon-twitter-black @icon-twitter @icon-vimeo-black @icon-vimeo;
+@spritesheet: 129px 96px '../assets/icons/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(%a)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

@@ -40,7 +40,7 @@ gulp.task('default', function () {
 });
 
 const pugFiles = [
-//	'./src/**/*.pug',
+	'./src/**/*.pug',
 //	'!./src/**/content.pug', 
 //	'!./src/modules/*.pug', 
 //	'!./src/blocks/*.pug', 
@@ -52,13 +52,8 @@ const lessFiles = [
 	'./src/less/+(styles|styles-per).less',
 ];
 const jsFiles = [
-//	'./src/js/debug-grid-create.js',
-//	'./src/js/app.js',
-//	'./src/js/main.js',
-//	'./src/js/store-scroll.js',
-//	'./src/js/canvans-rings.js',
-//	'./src/js/tabs.js',
-//	'./src/js/render-content.js',
+	'./src/js/main.js',
+
 ];//порядок сборки js файлов
 
 function clear() {
@@ -105,18 +100,17 @@ function html() {
 }
 
 function pugc() {
-	
-	return gulp.src(pugFiles)
-				
-		.pipe(data(file => require('./src/assets/data/data.json')))
-		.pipe(pug({
-			 pretty: '\t',
-		}))
-		.pipe(gulp.dest('./build'))
-		
-		.pipe(gulpif(isSync, browserSync.stream()))
-		// .pipe(notify({ message: 'pugc task complete' }));
-		
+    return gulp.src(['./src/**/*.pug','!./src/**/content.pug', '!./src/modules/*.pug', '!./src/blocks/*.pug', '!./src/blocks/**/*.pug', '!./src/templates/*.pug'])
+        .pipe(pug({ pretty: '\t' }))
+        .pipe(gulp.dest('./build'))
+        .pipe(gulpif(isSync, browserSync.stream()));
+}
+
+function pugProd(){
+    return gulp.src(['./src/*.pug',])
+        .pipe(pug({ pretty: '\t' }))
+        .pipe(gulp.dest('./'))
+        .pipe(gulpif(isSync, browserSync.stream()));
 }
 
 function styles() {
@@ -197,7 +191,7 @@ function dataJson() {
 
 
 let build = gulp.series(clear,
-	gulp.parallel(clear, images, fonts, html, styles)
+	gulp.parallel(sprite, images, fonts, html, pugc, pugProd, styles, scripts)
 	// функцции которые запускаются
 );
 
