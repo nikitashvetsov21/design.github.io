@@ -5,4 +5,10 @@ html(lang="ru")
         meta(name='viewport' content='width=device-width, initial-scale=1')
         link(rel='stylesheet', href='css/styles.css', type='text/css')
     body
-        main.page sd
+        main.page 
+            include blocks/debuggrid
+            include blocks/header
+            include blocks/banner
+        block script
+            script(src='js/debug-grid-create.js')
+            script(src='js/main.js')

@@ -1,0 +1,42 @@
+.page {
+    &__title {
+        &-h1, &-h2 {
+            font-family: "@{PTSans}-Bold";
+            color: @color_green;
+            text-transform: uppercase;
+            line-height: 40px;
+            letter-spacing: 1px;
+        }
+        &-h1 {
+            font-size: 45px;
+        }
+        &-h2 {
+            font-size: 25px;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        border-radius: 5px;
+        height: 68px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-family: '@{PTSans}-Bold';
+        text-transform: uppercase;
+        border: none;
+        color: @color_white;
+        background-color: @color_violet;
+        border: 1px solid @color_violet;
+            &:hover{
+                    color: #262626;
+                    background-color: @color_white;
+
+                    transition: all ease-out 0.5s;
+                }
+    }
+}

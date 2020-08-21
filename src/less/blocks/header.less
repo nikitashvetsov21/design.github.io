@@ -1,0 +1,93 @@
+.header {
+    .row-flex();
+    color: @color_white;
+    align-items: center;
+    &-logo {
+        .col();
+        .size(6);
+        display: flex;
+        align-items: center;
+        &__icon{
+         .sprite(@icon-celender);
+        }
+        &__text {
+            font-family: "@{PTSans}-Bold";
+            margin-left: 10px;
+            font-size: 25px;
+        }
+    }
+
+    &-social {
+        .col();
+        .size(6);
+        .social {
+            display: flex;
+            //justify-content: center;
+            justify-content: flex-end;
+            &__icon {
+                margin: 0 8px; 
+                border-radius: 2px;
+                &:last-child {
+                    margin-right: 0;
+                } 
+                &_fb, 
+                &_tw,
+                &_inst,
+                &_vimeo,
+                &_google {
+                    filter: invert(1);
+                    &:hover {
+                        filter: invert(0);
+                        //filter: invert(1);
+                    }
+                }
+                &_fb {
+                    .sprite(@icon-facebook-black);
+                    &:hover {
+                        .sprite(@icon-facebook);
+                    }
+                } 
+                &_tw {
+                    .sprite(@icon-twitter-black);
+                    &:hover {
+                        .sprite(@icon-twitter);
+                    }
+                }    
+                &_inst {
+                    .sprite(@icon-instagram-black);
+                    &:hover {
+                        .sprite(@icon-instagram);
+                    }
+                }    
+                &_vimeo {
+                    .sprite(@icon-vimeo-black);
+                    &:hover {
+                        .sprite(@icon-vimeo);
+                    }
+                }    
+                &_google {
+                    .sprite(@icon-google-plus-black);
+                    &:hover {
+                        .sprite(@icon-google-plus);
+                    }
+                }       
+            }
+        }
+       
+        .icon{
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            background-color: #fff;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+    &-block {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+}
+

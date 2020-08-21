@@ -8,16 +8,21 @@ module.exports = {
     },
 	breakPoints: {
 		md: {
-            width: "920px",
+            width: "1024px",
         },
         sm: {
-            width: "720px"
+            width: "992px"
+        },
+        ssm: {
+            width: "768px"
         },
         xs: {
-            width: "576px"
+            width: "576px",
+            offset: "10px",
+            fields: "5px"
         },
         xxs: {
-            width: "420px",
+            width: "360px",
             /*
             offset: "10px",
             fields: "5px"
