@@ -1,0 +1,41 @@
+.testimonial {
+    position: relative;
+    padding: 75px 0;
+    background-image: url("../assets/img/bg-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 500px;
+    &-block {
+        position: relative;
+        .page__title-h2 {
+            color: @color_white;
+            padding-top: 75px;
+            margin-bottom: 45px;
+        }
+        .page__img {
+            .col();
+            .size(2);
+            .size-xs(5);
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .page__text {
+            color: @color_white;
+            
+            &:last-child {
+                .size(8);
+                margin: 0 auto;
+            };
+
+        }
+    }
+    &_opacity {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
