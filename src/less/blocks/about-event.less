@@ -1,0 +1,109 @@
+.about-event {
+
+    &-blok {
+        display: flex;
+        padding-bottom: 80px;
+        .page__title-h2 {
+            color: black;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left {
+        padding-top: 160px;
+        //padding-left: 250px;
+        .col();
+        .size(6);
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    &__title {
+        font-size: 25px;
+        color: @color_green;
+        text-transform: uppercase;
+        font-family: "@{PTSans}-Bold";
+        padding-bottom: 30px;
+        .size(6);
+    }
+
+    &__text_2 {
+        padding-bottom: 40px;
+        font-size: 16px;
+        color: @color_graytwo;
+        width: 460px;
+        
+    }
+
+    &__text_3 {
+        font-size: 16px;
+        color: @color_graytwo;
+        padding-bottom: 40px;
+        width: 401px;
+    }
+
+    &__right {
+        width: 50%;
+        height: 375px;
+        background-color: @color_gray;
+        margin-top: 150px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        .col();
+        .size(6);
+    }
+
+    &__icon-map {
+        .sprite(@icon-mark-map);
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__icon-celender {
+        .sprite(@icon-celender-orange);
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__icon-microphone{
+        .sprite(@icon-microfon);
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__icon-manplus {
+        .sprite(@icon-manplus);
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__blok_1, &__blok_2, &__blok_3, &__blok_4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text_4 {
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 50px;
+        padding-bottom: 25px;
+        font-family: "@{PTSans}-Bold";
+    }
+
+    &__text_5 {
+        //font-family: "@{PTSans}-Regular";
+        padding-left: 50px;
+        color: #888888;
+    }
+
+}
