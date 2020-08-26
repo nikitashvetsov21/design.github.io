@@ -1,0 +1,50 @@
+mixin SelectBox(name, options)
+    .select-box
+        .select-box__current(tabindex='1')
+            each option, index in options
+                .select-box__value
+                    input.select-box__input(type='radio' id=index value=option.value name=name checked)
+                    p.select-box__input-text #{option.name}
+            .select-box__icon
+        ul.select-box__list
+            each option, index in options
+                li 
+                    label.select-box__option(for=index aria-hidden) #{option.name}
+
+
+section#callback-form.callback
+    .wrapper
+        .callback-block
+            .page__img 
+                img(src="assets/img/img-girl.jpg")
+            .callback-block__text
+                h2.page__title-h2 Register Your Attendance Todays.
+                .page__text Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite det un nov lingua francal On refusa continuar payar custosive li traductores.
+                form.page__form(action="")
+                    input.page__input(type="text" name="userName" placeholder="Full Name*" onfocus="this.placeholder =''" onblur="this.placeholder ='Full Name*'" required)
+                    input.page__input(type="email" name="email" placeholder="Email" onfocus="this.placeholder =''" onblur="this.placeholder ='Email*'" required)
+                    input.page__input(type="tel" name="tel" placeholder="tel*" onfocus="this.placeholder =''" onblur="this.placeholder ='tel'" required)
+                    .select-box
+                    
+                        .select-box__current(tabindex='1')
+                            .select-box__value
+                                input#0.select-box__input(type='radio' value='1' name='select test' checked='')
+                                p.select-box__input-text test1
+                            .select-box__value
+                                input#1.select-box__input(type='radio' value='2' name='select test' checked='')
+                                p.select-box__input-text test2 
+                            .select-box__icon
+                        ul.select-box__list
+                            li
+                                label.select-box__option(for='0' aria-hidden='') test1
+                            li
+                                label.select-box__option(for='1' aria-hidden='') test2
+                    +SelectBox("select1", [
+                        {name:"text1", value:"1"},
+                        {name:"text2", value:"2"},
+                        {name:"text3", value:"3"},
+                        {name:"text4", value:"4"},
+                        {name:"text5", value:"5"},
+                    ])
+                    button.page__btn registration now
+

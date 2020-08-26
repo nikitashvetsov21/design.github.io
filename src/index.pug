@@ -6,7 +6,7 @@ html(lang="ru")
         link(rel='stylesheet', href='css/styles.css', type='text/css')
     body
         main.page 
-            include blocks/debuggrid
+            //-include blocks/debuggrid
             include blocks/header
             include blocks/banner
             include blocks/about-event
@@ -15,6 +15,8 @@ html(lang="ru")
             include blocks/schedule
             include blocks/testimonial
             include blocks/offer
+            include blocks/callback
+            include blocks/footer
         block script
             script(src='js/debug-grid-create.js')
             script(src='js/main.js')

@@ -1,0 +1,50 @@
+.callback {
+    background-color: @color_gray;
+    &-block {
+        .row-flex();
+        .page__img {
+            .shift-left(-1.5);
+            display: inline-block;
+            .shift-md-left(-2.5);
+            .sm(display,none);
+            img {
+                height: 550px;
+                
+            }
+        }
+        &__text {
+            .col();
+            .size(6.1);
+            .size-md(6.5);
+            .size-sm(12);
+            .sm-block({
+                padding-left: 0;
+                text-align: center;
+            });
+            .page__title-h2 {
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+            .page__text {
+                color: @color_graytwo;
+            }
+            padding: 75px 0 75px 35px;
+        }
+        .page__form {
+            .row-flex();
+            .page__btn {
+                border-radius: 0;
+                .col();
+                .size(12);
+
+            }
+            .page__input, .select-box {
+                .col();
+                .size(6);
+                .size-xs(12);
+                margin: 10px;
+                border: 1px solid #e5e4e4;
+            }
+        }
+    }
+}

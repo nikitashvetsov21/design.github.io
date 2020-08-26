@@ -1,0 +1,25 @@
+.footer {
+    padding: 50px 0;
+    background-color: @color_violet;
+    &-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: @color_white;
+        .xs-block({
+            flex-wrap: wrap;
+            justify-content: center;
+        });
+        .copyright {
+            font-size: 14px;
+            line-height: 24px;
+            .xs(order,1);
+        }
+        .social {
+            .xs-block({
+                order: 0;
+                margin-bottom: 20px;
+            });
+        }
+    }
+}

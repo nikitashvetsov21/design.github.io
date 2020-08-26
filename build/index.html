@@ -7,9 +7,6 @@
 	</head>
 	<body>
 		<main class="page"> 
-			<button class="debugGrid-btn debugGrid-btncreate" onclick="debugGridCreate()"></button>
-			<button class="debugGrid-btn debugGrid-btnremove debugGrid-btnhidden" onclick="debugGridRemove()"></button>
-			<div class="debugGrid debugGridz-index-negative"></div>
 			<header class="header-block">
 				<div class="wrapper">
 					<div class="header"><a class="header-logo" href="#banner">
@@ -61,34 +58,34 @@
 					</div>
 				</div>
 			</section>
-			<section class="about-event">
+			<section class="about">
 				<div class="wrapper">
-					<div class="about-event-blok">
-						<div class="about-event__left">
+					<div class="about-block">
+						<div class="about-block__text">
 							<h2 class="page__title-h2">about event</h2>
-							<p class="about-event__text_2">Li nov lingua franca va esser plu simplic e regular quam li existent Europan lingues.It va esser tam simplic quam Occidental fact, esser Occidental un skeptic li Europon lingues es membres del sam familie.</p>
-							<p class="about-event__text_2">It va esser tam simplic quam Occidental in fact esser lit Occidental. A un Angleso it va semblar un simplificat us Cambridge amic li Europan membres del familie.</p><a class="page__btn_2" href="#callback-form">buy ticket</a>
+							<div class="page__text">Li nov lingua franca va esser plu simplic e regular quam li existent Europan lingues.It va esser tam simplic quam Occidental fact, esser Occidental un skeptic li Europon lingues es membres del sam familie.</div>
+							<div class="page__text">It va esser tam simplic quam Occidental in fact esser lit Occidental. A un Angleso it va semblar un simplificat us Cambridge amic li Europan membres del familie.</div>
+							<button class="page__btn page__btn_open-module">buy ticket</button>
 						</div>
-						<div class="about-event__right">
-							<div class="about-event__blok_1">
-								<div class="about-event__icon-map"></div>
-								<p class="about-event__text_4">France</p>
-								<p class="about-event__text_5">Division No.20, Dola Mine Road, UK</p>
-							</div>
-							<div class="about-event__blok_2">
-								<div class="about-event__icon-celender"></div>
-								<p class="about-event__text_4">24 - 26 March 2017</p>
-								<p class="about-event__text_5">After 256 Days</p>
-							</div>
-							<div class="about-event__blok_3">
-								<div class="about-event__icon-microphone"></div>
-								<p class="about-event__text_4">36+Speakers</p>
-								<p class="about-event__text_5">Popular Speakers Attend Here</p>
-							</div>
-							<div class="about-event__blok_4">
-								<div class="about-event__icon-manplus"></div>
-								<p class="about-event__text_4">55+Sponsors</p>
-								<p class="about-event__text_5">Be a Sponsors & make it Fruitful</p>
+						<div class="about-block__info">
+							<div class="about-block-info-contacts">
+								<div class="about-block-info-contacts__geo">
+									<div class="about-block-info-contacts__geo-name">France</div>
+									<div class="about-block-info-contacts__geo-name-detail">Division No.20, Dola Mine Road, UK</div>
+								</div>
+								<div class="about-block-info-contacts__date">
+									<div class="about-block-info-contacts__date-name">24 - 26 March 2017</div>
+									<div class="about-block-info-contacts__date-name-detail">After 256 Days</div>
+								</div>
+								<div class="about-block-info-contacts__speaker">
+									<div class="about-block-info-contacts__speaker-name">36+Speakers
+										<div class="about-block-info-contacts__speaker-name-detail">Popular Speakers Attend Here</div>
+									</div>
+								</div>
+								<div class="about-block-info-contacts__sponsor">
+									<div class="about-block-info-contacts__sponsor-name">55+Sponsors</div>
+									<div class="about-block-info-contacts__sponsor-name-detail">Be a Sponsors & make it Fruitful</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -173,15 +170,14 @@
 			</section>
 			<section class="testimonial">
 				<div class="testimonial_parallax"> </div>
-				<div class="testimonial_opacity">
-					<div class="wrapper">
-						<div class="testimonial-block">
-							<h2 class="page__title-h2">testiomonial</h2>
-							<div class="page__img"><img src="assets/img/img-man.jpg"></div>
-							<div class="page__text page__text_bold">Laura Dickson</div>
-							<div class="page__text">Designer</div>
-							<div class="page__text">“ Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation. ”</div>
-						</div>
+				<div class="testimonial_opacity"></div>
+				<div class="wrapper">
+					<div class="testimonial-block">
+						<h2 class="page__title-h2">testiomonial</h2>
+						<div class="page__img"><img src="assets/img/img-man.jpg"></div>
+						<div class="page__text page__text_bold">Laura Dickson</div>
+						<div class="page__text">Designer</div>
+						<div class="page__text">“ Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation. ”</div>
 					</div>
 				</div>
 			</section>
@@ -190,6 +186,94 @@
 					<div class="offer__title">Interested in speaking at Conference 2020? <a class="page__link" href="">Register Your Attendance Todays</a></div>
 				</div>
 			</section>
+			<section class="callback" id="callback-form">
+				<div class="wrapper">
+					<div class="callback-block">
+						<div class="page__img"> <img src="assets/img/img-girl.jpg"></div>
+						<div class="callback-block__text">
+							<h2 class="page__title-h2">Register Your Attendance Todays.</h2>
+							<div class="page__text">Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite det un nov lingua francal On refusa continuar payar custosive li traductores.</div>
+							<form class="page__form" action="">
+								<input class="page__input" type="text" name="userName" placeholder="Full Name*" onfocus="this.placeholder =''" onblur="this.placeholder ='Full Name*'" required>
+								<input class="page__input" type="email" name="email" placeholder="Email" onfocus="this.placeholder =''" onblur="this.placeholder ='Email*'" required>
+								<input class="page__input" type="tel" name="tel" placeholder="tel*" onfocus="this.placeholder =''" onblur="this.placeholder ='tel'" required>
+								<div class="select-box">
+									<div class="select-box__current" tabindex="1">
+										<div class="select-box__value">
+											<input class="select-box__input" id="0" type="radio" value="1" name="select test" checked="">
+											<p class="select-box__input-text">test1</p>
+										</div>
+										<div class="select-box__value">
+											<input class="select-box__input" id="1" type="radio" value="2" name="select test" checked="">
+											<p class="select-box__input-text">test2 </p>
+										</div>
+										<div class="select-box__icon"></div>
+									</div>
+									<ul class="select-box__list">
+										<li>
+											<label class="select-box__option" for="0" aria-hidden="">test1</label>
+										</li>
+										<li>
+											<label class="select-box__option" for="1" aria-hidden="">test2</label>
+										</li>
+									</ul>
+								</div>
+											<div class="select-box">
+												<div class="select-box__current" tabindex="1">
+													<div class="select-box__value">
+														<input class="select-box__input" type="radio" id="0" value="1" name="select1" checked>
+														<p class="select-box__input-text">text1</p>
+													</div>
+													<div class="select-box__value">
+														<input class="select-box__input" type="radio" id="1" value="2" name="select1" checked>
+														<p class="select-box__input-text">text2</p>
+													</div>
+													<div class="select-box__value">
+														<input class="select-box__input" type="radio" id="2" value="3" name="select1" checked>
+														<p class="select-box__input-text">text3</p>
+													</div>
+													<div class="select-box__value">
+														<input class="select-box__input" type="radio" id="3" value="4" name="select1" checked>
+														<p class="select-box__input-text">text4</p>
+													</div>
+													<div class="select-box__value">
+														<input class="select-box__input" type="radio" id="4" value="5" name="select1" checked>
+														<p class="select-box__input-text">text5</p>
+													</div>
+													<div class="select-box__icon"></div>
+												</div>
+												<ul class="select-box__list">
+													<li> 
+														<label class="select-box__option" for="0" aria-hidden>text1</label>
+													</li>
+													<li> 
+														<label class="select-box__option" for="1" aria-hidden>text2</label>
+													</li>
+													<li> 
+														<label class="select-box__option" for="2" aria-hidden>text3</label>
+													</li>
+													<li> 
+														<label class="select-box__option" for="3" aria-hidden>text4</label>
+													</li>
+													<li> 
+														<label class="select-box__option" for="4" aria-hidden>text5</label>
+													</li>
+												</ul>
+											</div>
+								<button class="page__btn">registration now</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="footer-block">
+						<div class="copyright">Copyrights © All Rights Reserved by Event</div>
+						<nav class="social"><a class="social__icon social__icon_fb" href=""></a><a class="social__icon social__icon_tw" href=""></a><a class="social__icon social__icon_inst" href=""></a><a class="social__icon social__icon_vimeo" href=""></a><a class="social__icon social__icon_google" href=""></a></nav>
+					</div>
+				</div>
+			</footer>
 		</main>
 		<script src="js/debug-grid-create.js"></script>
 		<script src="js/main.js"></script>
