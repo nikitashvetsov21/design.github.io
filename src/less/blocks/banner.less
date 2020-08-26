@@ -13,6 +13,9 @@
         padding-top: 15px;
     
         .page__title-h1 {
+            .animated({
+                .fadeInDown();
+            });
         }
         &-info {
             display: flex;
@@ -20,6 +23,10 @@
             font-size: 20px;
             margin-top: 25px;
             font-family: "@{PTSans}-Bold";
+            .animated({
+                .fadeInDown();
+                .delay(0.5s);
+            });
             div {
                 display: flex;
                 align-items: center;
@@ -61,7 +68,11 @@
                 .size-ssm(7);
                 .size-xs(12);
                 .ssm(margin-bottom, 15px);
-            } 
+                .animated({
+                    .fadeInDown();
+                    .delay(1.5s);
+                });
+            }
         }
         &-counter {
             .size(7);
@@ -73,6 +84,10 @@
             padding: 25px 50px;
             .sm(padding, 25px);
             .xs(display, none);
+            .animated({
+                .fadeInDown();
+                .delay(2s);
+            });
             &__item {
                 .col();
                 .size(3);

@@ -54,6 +54,10 @@ const lessFiles = [
 const jsFiles = [
 	'./src/js/debug-grid-create.js',
 	'./src/js/main.js',
+	'./src/js/countdown.js',
+	'./src/js/scroll-anchors.js',
+	'./src/js/store-scroll.js',
+	'./src/js/tabs.js',
 
 ];//порядок сборки js файлов
 

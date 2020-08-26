@@ -49,4 +49,23 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
     }
+
+    
+    &.animated{
+        .page__title-h2,
+        .page__img,
+        .page__text{
+        .animated({
+        .delay(0.2s);
+        .fadeInDown();
+        });
+        }
+        .page__img{
+        .delay(0.4s);
+        }
+        .page__text{
+        .delay(0.6s);
+        }
+        
+        }
 }
